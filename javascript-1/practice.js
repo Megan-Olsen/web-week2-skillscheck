@@ -140,24 +140,37 @@ const myNumbers = [3, 55, 788, 2, 1]
 // First, use .map to create a new array that doubles each number. Call the new array 'doubled'.
 
 // Code Here
+let doubled = myNumbers.map(function(element, index, array){
+	return element *= 2;
+})
 
 //////////////////PROBLEM 15////////////////////
 
 // Now, use .filter to create a new array containing any numbers that are greater than 100. Call the new array 'filtered'. 
 
 // Code Here
+const filtered = myNumbers.filter(function(element, index, array){
+	return element > 100;
+})
 
 //////////////////PROBLEM 16////////////////////
 
 // Next, use reduce to get the total of the numbers in the array summed together. Store the total in a new variable named 'total'. 
 
 // Code Here
+let total = myNumbers.reduce(function(acc, curr){
+	return acc + curr
+}, 0)
 
 //////////////////PROBLEM 17////////////////////
 
 // Finally, use .forEach to find the index of each item in the array. To begin, create an empty array called 'myNumbersIndex'. Then, use forEach to push each item's index from the myNumbers array into the newly created myNumbersIndex array. 
 
 // Code Here
+const myNumbersIndex = []
+myNumbers.forEach(function(element, index, array){
+	myNumbersIndex.push(index)
+})
 
 //////////////////PROBLEM 18////////////////////
 
@@ -165,6 +178,9 @@ const myNumbers = [3, 55, 788, 2, 1]
 const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
 
 // Code Here
+const forTheLoveOfGeorge = notGeorge.map(function(element, index, array){
+	return 'George'
+})
 
 //////////////////PROBLEM 19////////////////////
 
@@ -179,9 +195,14 @@ const people = [
 ]
 
 // Code Here
+let enemies = people.filter((item) => item.friend === false);
+
 
 //////////////////PROBLEM 20////////////////////
 
 // Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'. Use .reduce().
 
 // Code Here
+const totallyAwesome = people.reduce((acc, curr) => {
+	return acc + curr.awesomeLevel
+}, 0);
