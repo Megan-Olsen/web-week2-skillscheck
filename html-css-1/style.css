@@ -9,7 +9,7 @@
     text-transform: uppercase;
     align-self: center;
     color: white;
-    font-size: 20px;
+    font-size: 28px;
     margin-left: 30px;
 }
 .navbar{
@@ -24,18 +24,67 @@
     color: white;
 }
 .moreknows{
-    height: 300px;
+    height: 400px;
+    width: 100%;
     padding: 75px;
     background-color: #000000;
     display: flex;
 }
 .knows{
+    display: flex;
     color: #f7f692;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 60px;
     justify-self: center;
     align-self: center;
     margin: 30px;
+    font-weight: 700;
+
+}
+.threes{
+    height: 300px;
+    width: 100%;
+    padding: 75px;
+    display: flex;
+    padding: 60px;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.rounded{
+    background-color: #a4ffd7;
+    height: 250px;
+    width: 250px;
+    justify-content: space-evenly;
+    border-radius: 25px;
+
+}
+.two{
+    height: 300px;
+    width: 100%;
+    padding: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.orange{
+    background-color: #f7c061;
+    height: 250px;
+    width: 500px;
+    justify-content: space-evenly;
+}
+
+.words{
+    height: 300px;
+    width: 100%;
+    padding: 75px;
+    display: flex;
+}    
 
 
+
+.footer{
+    height: 120px;
+    width: 100%;
+    background-color: #630b95;
+    display: flex; 
 }
